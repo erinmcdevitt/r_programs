@@ -1,0 +1,64 @@
+---
+title: "Untitled"
+author: "Erin McDevitt"
+date: "2023-05-25"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+install.packages('tinytex')
+tinytex::install_tinytex()
+
+tinytex:::install_prebuilt()
+
+
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+# Load required packages
+library(ggplot2)
+library(cowplot)
+
+# Create some sample data
+set.seed(123)
+data <- data.frame(
+  Category = rep(LETTERS[1:4], each = 10),
+  Value = rnorm(40)
+)
+
+# Create a list to store the charts
+charts <- list()
+
+# Generate the four charts and store them in the list
+for (i in 1:4) {
+  chart <- ggplot(data, aes(x = Category, y = Value)) +
+    geom_bar(stat = "identity", fill = "steelblue") +
+    ggtitle(paste("Chart", i)) +
+    theme(plot.title = element_text(hjust = 0.5))
+  
+  charts[[i]] <- chart
+}
+
+# Create the grid of charts
+grid <- plot_grid(plotlist = charts, ncol = 2)
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r # Output the chart grid}
+
+print(grid)
+
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
