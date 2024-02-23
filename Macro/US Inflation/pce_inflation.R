@@ -3,13 +3,6 @@
 
 rm(list = ls())
 
-# Update Employment Data -----------------------------------#
-
-source(paste0('C:/Users/', Sys.getenv('USERNAME'), '/OneDrive - Rock Creek Group/Data Bank/r_program_set_up/set_up.R', sep = ""))
-
-
-source(paste("C:/Users/", Sys.getenv("USERNAME"), "/OneDrive - Rock Creek Group/Data Bank/macro/code/inflation_data.R", sep = ""))
-
 # ----------------------------------------------------------#
 
 current_month <- "May"
@@ -18,16 +11,9 @@ current_year <- "2023"
 prev_month <- "April"
 
 
-source(paste("C:/Users/", Sys.getenv("USERNAME"), "/OneDrive - Rock Creek Group/Data Bank/r_program_set_up/set_up.R", sep = ""))
-
-
 list <- grep("cpi",names(.GlobalEnv),value=TRUE) 
 
 rm(list = list)
-
-data_folder <- paste("C:/Users/", Sys.getenv("USERNAME"), "/OneDrive - Rock Creek Group/Data Bank/macro/", sep = "")
-
-macro_folder <- paste("C:/Users/", Sys.getenv("USERNAME"), "/OneDrive - Rock Creek Group/Ad Hoc/US Macroeconomic Developments/", sep = "")
 
 # Save previous data in archive folder ---------------------#
 
