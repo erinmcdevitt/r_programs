@@ -34,8 +34,6 @@ ipak(c('ecb'))
 library(ecb)
 
 
-macro_data <- paste("C:/Users/", Sys.getenv("USERNAME"), "/OneDrive - Rock Creek Group/Data Bank/macro/", sep = "")
-
 if (!file.exists(paste(macro_data, "data/monetary_policy_data.xlsx", sep =""))) {
   mp <- createWorkbook()
   saveWorkbook(mp, file = paste(macro_data, "data/monetary_policy_data.xlsx", sep = ""), overwrite = FALSE)
