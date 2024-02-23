@@ -7,8 +7,6 @@ rm(list = ls())
 source(paste0())
 
 
-data <- paste("C:/Users/", Sys.getenv("USERNAME"), "/OneDrive - Rock Creek Group/Data Bank")
-
 
 
 # Current Date -------------------------------------------------------------
