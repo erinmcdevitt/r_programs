@@ -20,8 +20,6 @@
 # View(popular_series)
 #rm(popular_series)
 
-macro_data <- paste("C:/Users/", Sys.getenv("USERNAME"), "/OneDrive - Rock Creek Group/Data Bank/macro/", sep = "")
-
 if (!file.exists(paste(macro_data, "data/labor_data.xlsx", sep = ""))) {
   ld <- createWorkbook()
   saveWorkbook(ld, file = "data/labor_data.xlsx", overwrite = TRUE)
