@@ -16,7 +16,7 @@ geometry: left = 0.5in, right = 0.5in, top =0.5in, bottom = 0.3in, asymmetric
   
 ```{r setup, include=FALSE, eval = FALSE, echo = FALSE, warning = FALSE, message = FALSE}
 
-source(paste("C:/Users/", Sys.getenv("USERNAME"), "/OneDrive - Rock Creek Group/Data Bank/macro/code/labor_data.R", sep = ""))
+source(paste(PATH))
 
 rm(list=ls())
 
@@ -24,12 +24,6 @@ current_month <- "May"
 current_year <- "2023"
 
 prev_month <- "April"
-
-source(paste("C:/Users/", Sys.getenv("USERNAME"), "/OneDrive - Rock Creek Group/Data Bank/r_program_set_up/set_up.R", sep = ""))
-
-data_folder <- paste("C:/Users/", Sys.getenv("USERNAME"), "/OneDrive - Rock Creek Group/Data Bank/macro/", sep = "")
-
-macro_folder <- paste("C:/Users/", Sys.getenv("USERNAME"), "/OneDrive - Rock Creek Group/Ad Hoc/US Macroeconomic Developments/", sep = "")
 
 
 files <- list.files(paste(macro_folder, "labor_market/output/underlying_figures", sep = ""), pattern = "\\.pdf$", full.names = TRUE)
