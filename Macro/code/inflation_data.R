@@ -21,7 +21,7 @@
 #rm(popular_series)
 
 
-macro_data <- paste("C:/Users/", Sys.getenv("USERNAME"), "/OneDrive - Rock Creek Group/Data Bank/macro/", sep = "")
+macro_data <- paste("C:/Users/", Sys.getenv("USERNAME"), sep = "")
 
 
 if (!file.exists(paste(macro_data, "/data/inflation_data.xlsx", sep = ""))) {
