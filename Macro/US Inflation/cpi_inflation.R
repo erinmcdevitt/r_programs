@@ -3,23 +3,11 @@
 
 rm(list = ls())
 
-# Update CPI Data -----------------------------------#
-
-source(paste0('C:/Users/', Sys.getenv('USERNAME'), '/OneDrive - Rock Creek Group/Data Bank/R/set_up.R', sep = ""))
-
-
-source(paste("C:/Users/", Sys.getenv("USERNAME"), "/OneDrive - Rock Creek Group/Data Bank/macro/code/inflation_data.R", sep = ""))
-
-
 # ----------------------------------------------------------#
 
 current_month <- "September"
 current_year <- "2023"
 prev_month <- "July"
-
-data_folder <- paste("C:/Users/", Sys.getenv("USERNAME"), "/OneDrive - Rock Creek Group/Data Bank/macro/", sep = "")
-
-macro_folder <- paste("C:/Users/", Sys.getenv("USERNAME"), "/OneDrive - Rock Creek Group/Ad Hoc/US Macroeconomic Developments/", sep = "")
 
 # Save previous data in archive folder ---------------------#
 
