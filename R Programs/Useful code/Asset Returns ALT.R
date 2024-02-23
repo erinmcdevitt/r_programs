@@ -7,15 +7,8 @@
 rm(list = ls())
 #comment out if using main
 
-source(paste0('C:/Users/', Sys.getenv('USERNAME'), '/OneDrive - Rock Creek Group/Research/R/install_packages.R', sep = ''))
-source(paste0('C:/Users/', Sys.getenv('USERNAME'), '/OneDrive - Rock Creek Group/Research/R/load_libraries.R', sep = ''))
-source(paste0('C:/Users/', Sys.getenv('USERNAME'), '/OneDrive - Rock Creek Group/Research/R/api_connections.R', sep = ''))
-source(paste0('C:/Users/', Sys.getenv('USERNAME'), '/OneDrive - Rock Creek Group/Research/R/bloomberg_api.R', sep = ''))
-source(paste0('C:/Users/', Sys.getenv('USERNAME'), '/OneDrive - Rock Creek Group/Quarterly Letters/Set Up/Visuals/rcg_quarterly_style.R', sep = ""))
 
 current_quarter <- "Q4 2023"
-
-quarterly_folder <- paste0('C:/Users/', Sys.getenv('USERNAME'), '/OneDrive - Rock Creek Group/Quarterly Letters/', sep = "")
 
 code_folder <- paste0(quarterly_folder, current_quarter, "/Visuals/code", sep = "")
 data_folder <- paste0(quarterly_folder, current_quarter,"/Visuals/data", sep = "")
