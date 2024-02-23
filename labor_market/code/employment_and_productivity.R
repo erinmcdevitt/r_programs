@@ -605,7 +605,7 @@ ggsave(paste0(macro_folder, 'labor_market/output/underlying_figures/Weekly Joble
 # Export
 
 title <- ggdraw() + draw_label("Employment Conditions", fontface='bold')
-caption <- ggdraw() + draw_label(paste0("RockCreek - ", format(Sys.Date(), "%B %d, %Y"), sep = ''), size = 8,
+caption <- ggdraw() + draw_label(paste0("", format(Sys.Date(), "%B %d, %Y"), sep = ''), size = 8,
                                  fontface = 'plain', x=0.03, y = 0.3, hjust = 0, alpha = 0.5)
 
 mc1 <- list(plot_unrate, plot_earnings_unrate, plot_payroll, plot_lfpr)
