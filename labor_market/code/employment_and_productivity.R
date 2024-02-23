@@ -10,19 +10,16 @@ current_year <- "2023"
 
 prev_month <- "August"
 
-source(paste("C:/Users/", Sys.getenv("USERNAME"), "/OneDrive - Rock Creek Group/Data Bank/r_program_set_up/set_up.R", sep = ""))
-
-source(paste("C:/Users/", Sys.getenv("USERNAME"), "/OneDrive - Rock Creek Group/Data Bank/macro/code/labor_data.R", sep = ""))
-
-
+#source(set_up.R)
+$source(labor_data.R)
 
 list <- grep("us_",names(.GlobalEnv),value=TRUE)
 
 rm(list = list)
 
-data_folder <- paste("C:/Users/", Sys.getenv("USERNAME"), "/OneDrive - Rock Creek Group/Data Bank/macro/", sep = "")
+#data_folder <- 
 
-macro_folder <- paste("C:/Users/", Sys.getenv("USERNAME"), "/OneDrive - Rock Creek Group/Ad Hoc/US Macroeconomic Developments/", sep = "")
+#macro_folder <- 
 
 
 
